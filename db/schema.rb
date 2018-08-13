@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180813053341) do
+ActiveRecord::Schema.define(version: 20180813205157) do
 
   create_table "questions", force: :cascade do |t|
     t.string "title"
@@ -20,6 +20,18 @@ ActiveRecord::Schema.define(version: 20180813053341) do
     t.integer "evaluation"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "question_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "user_name"
+    t.string "password"
+    t.text "pass_question"
+    t.text "user_image_name"
+    t.integer "user_point"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
   end
 
 end

@@ -1,5 +1,5 @@
 current directory: /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.18/ext/ffi_c
-/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20180813-20103-1vr12lb.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20180814-45010-1f62dp3.rb extconf.rb
 checking for ffi.h... no
 checking for ffi.h in /usr/local/include,/usr/include/ffi... yes
 checking for ffi_call() in -lffi... yes
@@ -78,4 +78,4 @@ ld: warning: The i386 architecture is deprecated for macOS (remove from Xcode bu
 
 current directory: /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.18/ext/ffi_c
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20180813-20103-tgk92s
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20180814-45010-hohgq0

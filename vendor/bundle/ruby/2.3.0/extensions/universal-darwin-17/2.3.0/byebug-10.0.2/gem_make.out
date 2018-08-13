@@ -1,5 +1,5 @@
 current directory: /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.2/ext/byebug
-/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20180813-98313-nkc98j.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20180814-45010-1tr6dvy.rb extconf.rb
 creating Makefile
 
 current directory: /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.2/ext/byebug
@@ -21,4 +21,4 @@ ld: warning: The i386 architecture is deprecated for macOS (remove from Xcode bu
 
 current directory: /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.2/ext/byebug
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20180813-98313-h1w614/byebug
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20180814-45010-1spghz1/byebug

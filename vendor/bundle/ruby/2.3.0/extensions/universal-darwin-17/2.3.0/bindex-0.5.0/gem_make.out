@@ -1,5 +1,5 @@
 current directory: /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
-/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20180813-98313-axfbmk.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20180814-45010-5ece0p.rb extconf.rb
 creating Makefile
 
 current directory: /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
@@ -17,4 +17,4 @@ ld: warning: The i386 architecture is deprecated for macOS (remove from Xcode bu
 
 current directory: /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20180813-98313-1a2pfcb/bindex
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20180814-45010-1cyfd12/bindex

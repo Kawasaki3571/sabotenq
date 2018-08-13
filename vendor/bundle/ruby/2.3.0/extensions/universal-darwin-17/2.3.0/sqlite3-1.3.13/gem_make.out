@@ -1,5 +1,5 @@
 current directory: /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/sqlite3-1.3.13/ext/sqlite3
-/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20180813-22847-1eq0s0r.rb extconf.rb --with-sqlite3-lib=/usr/lib
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20180814-45010-l5415v.rb extconf.rb --with-sqlite3-lib=/usr/lib
 checking for sqlite3.h... yes
 checking for pthread_create() in -lpthread... yes
 checking for sqlite3_libversion_number() in -lsqlite3... yes
@@ -39,4 +39,4 @@ ld: warning: The i386 architecture is deprecated for macOS (remove from Xcode bu
 
 current directory: /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/sqlite3-1.3.13/ext/sqlite3
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20180813-22847-vrmnh7/sqlite3
+/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20180814-45010-x772ib/sqlite3
