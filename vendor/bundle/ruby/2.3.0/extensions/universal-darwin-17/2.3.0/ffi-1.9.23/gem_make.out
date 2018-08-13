@@ -1,0 +1,31 @@
+current directory: /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20180813-10427-1a7totk.rb extconf.rb
+checking for ffi.h... no
+checking for ffi.h in /usr/local/include,/usr/include/ffi... yes
+checking for ffi_call() in -lffi... yes
+checking for ffi_closure_alloc()... no
+checking for ffi_raw_call()... no
+checking for shlwapi.h... no
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_with_gvl()... yes
+checking for rb_thread_call_without_gvl()... yes
+creating extconf.h
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/extensions/universal-darwin-17/2.3.0/ffi-1.9.23/mkmf.log
+
+current directory: /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c
+make "DESTDIR=" clean
+
+current directory: /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c
+make "DESTDIR="
+mkdir -p "/Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c"/libffi-i386; (if [ ! -f "/Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c/libffi"/configure ]; then echo "Running autoreconf for libffi"; cd "/Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c/libffi" && /bin/sh /Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c/libffi/autogen.sh > /dev/null; fi); (if [ ! -f "/Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c"/libffi-i386/Makefile ]; then echo "Configuring libffi for i386"; cd "/Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c"/libffi-i386 && env CC=" xcrun clang" CFLAGS="-arch i386 " LDFLAGS="-arch i386" "/Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c/libffi"/configure --disable-static --with-pic=yes --disable-dependency-tracking --disable-docs --host=i386-apple-darwin > /dev/null; fi); env MACOSX_DEPLOYMENT_TARGET=10.4 /Users/kawasakijun/Downloads/Xcode-beta 2.app/Contents/Developer/usr/bin/make -C "/Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c"/libffi-i386
+Configuring libffi for i386
+clang: error: unsupported option '-print-multi-os-directory'
+clang: error: no input files
+env: /Users/kawasakijun/Downloads/Xcode-beta: No such file or directory
+make: *** ["/Users/kawasakijun/Desktop/work/vagrant/sabotenq/vendor/bundle/ruby/2.3.0/gems/ffi-1.9.23/ext/ffi_c"/libffi-i386/.libs/libffi_convenience.a] Error 127
+
+make failed, exit code 2
