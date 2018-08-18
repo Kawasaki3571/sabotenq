@@ -1,0 +1,6 @@
+showです
+<h1>タイトル</h1>
+<%= @question.title %>
+
+<%= link_to "編集", edit_makeq_path(@question.id) %>
+<%= link_to "削除", makeq_path(@question.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>

@@ -1,0 +1,7 @@
+<h1>MakeQ#index</h1>
+<p>Find me in app/views/makeq/index.html.erb</p>
+<h1>投稿一覧</h1>
+ <% @questions.each do |post| %>
+    <p>タイトル</p>
+    <%=link_to post.title, "/makeq/#{post.id}" %>
+ <% end %>

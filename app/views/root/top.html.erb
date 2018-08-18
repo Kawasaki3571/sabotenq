@@ -1,0 +1,6 @@
+Top
+<h1>投稿一覧</h1>
+ <% @questions.each do |post| %>
+    <p>タイトル</p>
+    <%=link_to post.title, "/makeq/#{post.id}" %>
+ <% end %>

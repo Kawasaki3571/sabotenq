@@ -1,0 +1,2 @@
+class Rollmodeltest < ApplicationRecord
+end
