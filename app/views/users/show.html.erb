@@ -1,0 +1,38 @@
+
+
+<% if @user.id == current_user.id %>
+	<div class = "page-title">My page</div>
+	<%= form_for(@user, url: user_path(@user), html: { method: :patch }) do |f| %>
+
+  <div class="field">
+    <%= f.label :user_name %><br />
+    <%= f.text_field :user_name, autofocus: true, autocomplete: "name" %>
+    <div class="actions">
+    <%= f.submit "Update" %>
+  </div>
+  </div>
+  <% end %>
+<% else %>
+	<div class = "page-title">
+		<%= "#{@user.user_name}のステータス" %>
+	</div>
+<% end %>
+<div class = "">
+<p>
+<%= "名前:  #{@user.user_name}" %>
+</p>
+</div>
+<div class = "">
+<p>
+<%= "現在のContributions:  #{@count}" %>
+</p>
+</div>
+
+<div class = "white">
+		<%= link_to "トップへ", "/question_lists" %>
+	</div>
+<% if @user.provider.nil? %>
+	<div class = "white">
+		<%= link_to "アドレス、パスワード編集", "/profile" %>
+	</div>
+<% end %>

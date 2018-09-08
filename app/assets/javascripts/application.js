@@ -11,5 +11,20 @@
 // about supported directives.
 //
 //= require rails-ujs
+
+//= require jquery
+//= require jquery.turbolinks
 //= require turbolinks
-//= require_tree .
+//= require bootstrap-sprockets
+//= require_tree
+//= require jquery.turbolinks
+
+
+    $('container-answears-js').hover(
+  function(){
+    this.css('background-color', '#00f');
+},
+  function(){
+    this.css('background-color', #998a58);
+  }
+);

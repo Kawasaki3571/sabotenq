@@ -54,3 +54,42 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'ffi', '1.9.18'
+
+gem 'devise'
+
+gem 'omniauth'
+
+gem 'omniauth-facebook'
+
+# gem 'bootstrap', '~> 4.1.1'
+
+gem 'omniauth-twitter'
+
+
+gem 'bootstrap-sass'
+gem 'jquery-rails'
+
+gem 'cancancan'
+# gem 'rails_admin', '1.4.1'
+
+gem 'activeadmin'
+
+gem 'therubyracer'
+
+gem 'execjs'
+
+
+gem 'jquery-turbolinks'
+
+
+
+
+
+
+
+
+
+
+
+
+

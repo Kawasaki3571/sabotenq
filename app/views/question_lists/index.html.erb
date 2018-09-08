@@ -1,0 +1,7 @@
+question/index
+
+<h1>投稿一覧</h1>
+ <% @questions.each do |post| %>
+    <p>タイトル</p>
+    <%=link_to post.title, "/question_lists/#{post.id}" %>
+ <% end %>

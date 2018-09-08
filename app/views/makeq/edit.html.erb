@@ -6,7 +6,9 @@
     <%= f.text_field :title %>
     <h4>本文</h4>
     <%= f.text_area :explain %>
-    <%= f.submit '保存' %>    
+    <div>みんなの解答の公開設定  trueなら公開です！！！</div>
+	<%= f.text_field :koukai %>
+    <%= f.submit '保存' %>
 <% end %>
 
 <!-- , makeq_path(@question.id) -->

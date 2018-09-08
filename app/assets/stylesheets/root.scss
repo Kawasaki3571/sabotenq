@@ -1,3 +1,21 @@
 // Place all the styles related to the root controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.gold{
+
+}
+.container-rule{
+	background-color:#706848;
+	margin-top:20px;
+	width:60%;
+	float:left;
+	margin-right:3%;
+	border-style: double;
+}
+.container-rule:hover{
+	background-color:#b7a86f;
+}
+.rule-kyocho{
+	font-size:15px;
+	color:black;
+}

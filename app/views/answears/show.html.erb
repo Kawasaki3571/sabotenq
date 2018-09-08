@@ -1,0 +1,43 @@
+<div class = "page-title">解答</div>
+<div class = ""><%= @question.title %></div>
+<div class = "container-your-answear">
+<p class = "ans-kobetsu">Final Answear</p>
+<p class = "answear-kobetsu-final"><%= @answear.final_answear %></p>
+<p class = "ans-kobetsu">Process</p>
+<p class = "answear-kobetsu-process"><%= @answear.answear_text %></p>
+<% ans_user_name = User.where(id: @answear.user_id).first.user_name %>
+<%= ans_user_name %>
+
+	<% if @answear.favorited_by?(current_user) %>
+    	<p>
+        	<%= link_to favorites_cancel_path(@answear), method: :delete, :style=>"color:pink;" do %>
+            	<i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>
+                <%= @answear.favorites.count %> いいね
+            <% end %>
+        </p>
+    <% else %>
+        <p>
+            <%= link_to favorites_path(@answear), method: :post, answear_id: @answear.id, :style=>"color:pink;" do %>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <%= @answear.favorites.count %> いいんじゃね
+            <% end %>
+        </p>
+    <% end %>
+
+<% @replies.each do |reply| %>
+<p><%= reply.comment %></p>
+<% rep_user_name = User.where(id: reply.user_id).first.user_name %>
+<%= rep_user_name %>
+
+<% end %>
+
+
+<%= form_for @reply , url: {:controller => :replies, :action => :create} do |f| %>
+<h4>返信を送る</h4>
+<%= f.text_area :comment %>
+<%= f.submit '投稿' %>
+</div>
+<% end %>
+
+
+<%= link_to "問題へ戻る!", "/question_lists/#{@question.id}", :style=>"color:white;" %>

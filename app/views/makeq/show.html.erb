@@ -4,3 +4,10 @@ showです
 
 <%= link_to "編集", edit_makeq_path(@question.id) %>
 <%= link_to "削除", makeq_path(@question.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+
+
+<div>現状の解答集<div>
+<% @answears.each do |answear| %>
+    <p><%= "答えの数値  :  #{answear.final_answear}" %></p>
+    <p><%= "導出過程  :   #{answear.answear_text}" %></p>
+<% end %>
