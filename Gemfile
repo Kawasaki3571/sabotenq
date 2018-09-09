@@ -99,7 +99,7 @@ gem 'execjs'
 
 gem 'jquery-turbolinks'
 
-
+gem 'dotenv-rails'
 
 
 

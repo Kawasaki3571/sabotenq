@@ -291,9 +291,9 @@ Devise.setup do |config|
 
 
 # facebookapi
-    config.omniauth :facebook, '2184892311793391', '25a061552a9a02e8c195906ff9b36d0b', scope: 'email', info_fields: 'email, name'
+    config.omniauth :facebook,  ENV['FACEBOOK_ID'] , ENV['FACEBOOK_SECRET'], scope: 'email', info_fields: 'email, name'
 
-    config.omniauth :twitter, 'enMRSGalMtopzhBSusBEGk3Y7', 'uyRLnyz9ZcviIMxfWiNV4hBKT3WHImqZSRxUyg0smBAKae7v3k', scope: 'email', info_fields: 'email, name'
+    config.omniauth :twitter,ENV['TWITTER_KEY'],ENV['TWITTER_SECRET'], scope: 'email', info_fields: 'email, name'
 
-    config.secret_key = 'c94a03b2db79701e381363092ba899c19857f9fbb600a581c41fdde6cbd58a76f0760ebac2694a481420423019bca5d8dbc51cac46ff86d678051418cf21ec1e'
+    config.secret_key = ENV['DEVISE_SECRET']
 end
