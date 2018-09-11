@@ -1,7 +1,6 @@
-question_lists/showです
-<div class = "page-title">タイトル</div>
+<div class = "page-title">問題タイトル</div>
 <%= @question.title %>
-<h4>説明ェ!</h4>
+<div class = "q_explain">問題説明</div>
 <p>
 <%= @question.explain %>
 </p>
@@ -55,6 +54,7 @@ question_lists/showです
             <p><%= "答えの数値  :  #{current_a.final_answear}" %></p>
             <p><%= "導出過程  :   #{current_a.answear_text}" %></p>
         <% end %>
+        <%= link_to "編集する??", edit_answear_path, :style=>"color:orange;" %>
         </div>
         <div>他の人の解答...現在非公開です。解答期限までお待ちください。</div>
     <% end %>

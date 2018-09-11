@@ -29,6 +29,21 @@ class QuestionListsController < ApplicationController
     	redirect_to question_list_path
   	end
   	# :question_list_id
+
+  	def edit
+  		question = Question.find(params[:id])
+  		answears_q = current_user.answears.all
+  		@answear = answears_q.where(question_id: question.id).first
+  	end
+
+  	def update_answear
+  		question = Question.find(params[:id])
+  		answears_q = current_user.answears.all
+  		answear = answears_q.where(question_id: question.id).first
+  		answear.update(answear_params)
+  		redirect_to question_lists_path
+  	end
+
   	def update
     	question = Question.find(params[:id])
     	answear = current_user.answears.where(question_id: question.id).first
@@ -67,4 +82,6 @@ class QuestionListsController < ApplicationController
 		question = Question.find(params[:id])
 		@answear_all = question.answears.all
 	end
+
 end
+

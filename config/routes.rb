@@ -38,9 +38,14 @@ Rails.application.routes.draw do
 
   resources :question_lists, only: [:index, :show,:create, :update] do
      # resources :favorites, only: [:create, :destroy]
-     resources :answears, only: [:create, :update]
+     # resources :answears, only: [:create, :update]
   end
   post '/question_lists/:id' => 'question_lists#create'
+
+  get 'question_lists/:id/edit' => 'question_lists#edit', as: 'edit_answear'
+  post 'question_lists/:id/edit' => 'question_lists#update_answear', as: 'update_answear'
+
+
   get 'answears/:answear_id' => 'answears#show', as: "answears_kobetsu"
   post '/answears/:answear_id' => 'replies#create'
   delete '/answears/:answear_id' => 'replies#destroy'
