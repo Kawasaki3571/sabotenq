@@ -41,7 +41,7 @@ class QuestionListsController < ApplicationController
   		answears_q = current_user.answears.all
   		answear = answears_q.where(question_id: question.id).first
   		answear.update(answear_params)
-  		redirect_to question_lists_path
+  		redirect_to question_list_path
   	end
 
   	def update

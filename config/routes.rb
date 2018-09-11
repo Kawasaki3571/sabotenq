@@ -43,7 +43,7 @@ Rails.application.routes.draw do
   post '/question_lists/:id' => 'question_lists#create'
 
   get 'question_lists/:id/edit' => 'question_lists#edit', as: 'edit_answear'
-  post 'question_lists/:id/edit' => 'question_lists#update_answear', as: 'update_answear'
+  patch 'question_lists/:id/edit' => 'question_lists#update_answear', as: 'update_answear'
 
 
   get 'answears/:answear_id' => 'answears#show', as: "answears_kobetsu"
