@@ -87,7 +87,7 @@ $(window).load(function(){
                   <li class="icon-bar header-menues">
         <!-- ↓ここにつきましては、5章の方で正しいroutingに書き直します。 -->
                     <div class = "glyphicon glyphicon-home"></div>
-                    <%= link_to current_user.user_name, user_path(current_user.id), :style=>"color:white;"%>
+                    <%= link_to "マイページ", user_path(current_user.id), :style=>"color:white;"%>
                   </li>
                   <li class="icon-bar header-menues">
                     
