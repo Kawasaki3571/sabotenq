@@ -1,7 +1,4 @@
-<%= @answear.final_answear %>
-
-
-<<div class = "page-title">>解答編集画面</div>
+<div class = "page-title">解答編集画面</div>
 <%= form_for @answear, url: update_answear_path do |f| %>
     <h4>ファイナルアンサー</h4>
     <%= f.text_field :final_answear %>
