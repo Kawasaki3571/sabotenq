@@ -70,11 +70,11 @@ body{
 	background-color:#666666;
 	width:100%;
 	background-size:cover;
-	height:1000px;
+	min-height:800px;
 	overflow:hidden;
 }
 html, body {
-    height: 1000px;
+    min-height: 800px;
 }
 #wrap{
      width: 100%;
@@ -88,7 +88,7 @@ html, body {
 .left-bar{
 	float:left;
 	width:20%;
-	height:1000%;
+	min-height:800px;
 }
 .main-content{
 	float:left;
@@ -97,7 +97,7 @@ html, body {
 .right-bar{
 	float:left;
 	width:20%;
-	height:1000px;
+	min-height:800px;
 }
 .header-menues{
 	height:50px;
@@ -168,7 +168,15 @@ ul {
 }
 
 
+.final-wrapper{
+	width:100%;
+	word-wrap:break-word;
+}
 
+.explain-wrapper{
+	width:100%;
+	word-wrap:break-word;
+}
 
 
 
