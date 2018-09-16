@@ -9,8 +9,8 @@
 <% if @question.koukai == "true" %>
         <% @answear_all.each do |answear_all| %>
             <div class="container-answears" id = "container-answears-js">
-            <p ><%= answear_all.final_answear %></p>
-            <p><%= answear_all.answear_text %></p>
+            <div class = "final-wrapper"><%= answear_all.final_answear %></div>
+            <div class = "explain-wrapper"><%= answear_all.answear_text %></div>
             <% ans_user_name = User.where(id: answear_all.user_id).first.user_name %>
             <%= link_to "created_by : #{ans_user_name}", "/users/#{answear_all.user_id}", :style=>"color:black;" %>
         <!-- いいね機能でつ -->
@@ -51,8 +51,8 @@
         <div class = "container-your-answear">
         <p>あなたの解答</p>
         <% @current_user_answears.each do |current_a| %>
-            <p><%= "答えの数値  :  #{current_a.final_answear}" %></p>
-            <p><%= "導出過程  :   #{current_a.answear_text}" %></p>
+            <div class = "finail-wrapper"><%= "答えの数値  :  #{current_a.final_answear}" %></div>
+            <div class = "explain-wrapper"><%= "導出過程  :   #{current_a.answear_text}" %></div>
         <% end %>
         <%= link_to "編集する??", edit_answear_path, :style=>"color:orange;" %>
         </div>
