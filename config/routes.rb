@@ -20,12 +20,6 @@ Rails.application.routes.draw do
     # delete '/sign_out' => 'devise/sessions#destroy', as: :destroy_user_session
   end
 
-  resources :rollmodeltests
-  resources :make_answears
-
-  resources :make_questions do
-  	
-  end
   post 'questions' => 'makeq#create'
 
   # resources :questions do
