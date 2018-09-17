@@ -17,7 +17,7 @@ class MakeqController < ApplicationController
   end
   def show
     @question = Question.find(params[:id])
-    @answears = Answear.where(question_id = params[:id]).all
+    @answears = Answear.where(question_id: params[:id]).all
   end
 
   def create
